@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="UserInput_JAR">
+    <output-path>$PROJECT_DIR$/out/artifacts/UserInput_JAR</output-path>
+    <root id="archive" name="UserInput_JAR.jar">
+      <element id="module-output" name="Scanner" />
+    </root>
+  </artifact>
+</component>

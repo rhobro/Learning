@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="BankManager_Android">
+    <output-path>$PROJECT_DIR$/out/artifacts/BankManager_Android</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="BankManager_Android.apk" />
+  </artifact>
+</component>

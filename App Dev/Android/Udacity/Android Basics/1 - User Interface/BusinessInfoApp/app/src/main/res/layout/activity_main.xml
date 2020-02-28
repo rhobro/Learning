@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2019 RoBro Tech. All rights reserved.
+  ~
+  ~ RoBro Tech is the Developer Company of Rohan Mathew.
+  ~
+  ~ Project: BusinessInfoApp
+  ~ File Name: activity_main.xml
+  ~ Last Modified: 02/05/19 18:56
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#49DB14"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="RoBro Tech"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/logo"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/robro_tech_logo" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coding_image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="50"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coding_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coding_image"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="CEO: Rohan Mathew"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="16dp"
+            android:text="We are a business which specialises in building technological services for any people who may require it. We make sure our products are encrypted with the best security possible and strive to always produce the best product we can."
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="Address: 6 Willowbrook Manor, Horbury, WF45FA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="Phone Number: 07445032112"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="Email: robozmat@gmail.com"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="Website: robro-tech.com"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="16dp"
+            android:text="Opening Hours: 24/7"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

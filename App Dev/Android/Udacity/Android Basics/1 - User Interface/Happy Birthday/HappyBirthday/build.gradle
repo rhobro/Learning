@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2019 RoBro Tech. All rights reserved.
+ *
+ * RoBro Tech is the Developer Company of Rohan Mathew.
+ *
+ * Project: HappyBirthday
+ * File Name: build.gradle
+ * Last Modified: 29/04/19 18:30
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

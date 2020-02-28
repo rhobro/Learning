@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="NumberGame_Android">
+    <output-path>$PROJECT_DIR$/out/artifacts/NumberGame_Android</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="NumberGame_Android.apk" />
+  </artifact>
+</component>

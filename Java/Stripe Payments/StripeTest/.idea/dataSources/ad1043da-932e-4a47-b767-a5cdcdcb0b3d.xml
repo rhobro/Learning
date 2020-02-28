@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="QuickSupreme Database">
+  <database-model serializer="dbm" dbms="DB2_LUW" family-id="DB2_LUW" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.1.44</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="AUDIT"/>
+    <schema id="3" parent="1" name="DB2GSE"/>
+    <schema id="4" parent="1" name="DB2INST1"/>
+    <schema id="5" parent="1" name="DSJOBMGR"/>
+    <schema id="6" parent="1" name="DSSCHED"/>
+    <schema id="7" parent="1" name="DSSHSV1"/>
+    <schema id="8" parent="1" name="DSWEB"/>
+    <schema id="9" parent="1" name="DSWEBSECURITY"/>
+    <schema id="10" parent="1" name="ERRORSCHEMA"/>
+    <schema id="11" parent="1" name="HEALTHMETRICS"/>
+    <schema id="12" parent="1" name="IBMADT"/>
+    <schema id="13" parent="1" name="IBMCONSOLE"/>
+    <schema id="14" parent="1" name="IBMOTS"/>
+    <schema id="15" parent="1" name="IBMPDQ"/>
+    <schema id="16" parent="1" name="IBM_DSM_VIEWS"/>
+    <schema id="17" parent="1" name="IBM_RTMON"/>
+    <schema id="18" parent="1" name="IBM_RTMON_BASELINE"/>
+    <schema id="19" parent="1" name="IBM_RTMON_DATA"/>
+    <schema id="20" parent="1" name="IBM_RTMON_EVMON"/>
+    <schema id="21" parent="1" name="IBM_RTMON_METADATA"/>
+    <schema id="22" parent="1" name="NULLID"/>
+    <schema id="23" parent="1" name="PROCMGMT"/>
+    <schema id="24" parent="1" name="SQLJ"/>
+    <schema id="25" parent="1" name="ST_INFORMTN_SCHEMA"/>
+    <schema id="26" parent="1" name="SYSCAT">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="27" parent="1" name="SYSFUN">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="28" parent="1" name="SYSIBM">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="29" parent="1" name="SYSIBMADM">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="30" parent="1" name="SYSIBMINTERNAL"/>
+    <schema id="31" parent="1" name="SYSIBMTS"/>
+    <schema id="32" parent="1" name="SYSPROC">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="33" parent="1" name="SYSPUBLIC">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="34" parent="1" name="SYSSTAT">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="35" parent="1" name="SYSTOOLS">
+      <Substituted>1</Substituted>
+    </schema>
+    <schema id="36" parent="1" name="XCN17107">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+  </database-model>
+</dataSource>

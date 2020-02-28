@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="apk" build-on-make="true" name="TicTacToe_Android">
+    <output-path>$PROJECT_DIR$/out/artifacts/TicTacToe_Android</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="TicTacToe_Android.apk" />
+  </artifact>
+</component>

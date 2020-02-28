@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019 RoBro Tech. All rights reserved.
+  ~
+  ~ RoBro Tech is the Developer Company of Rohan Mathew.
+  ~
+  ~ Project: SpyTransmit (HappyBirthday Prank)
+  ~ File Name: colors.xml
+  ~ Last Modified: 18/05/19 09:36
+  -->
+
+<resources>
+    <color name="colorPrimary">#313131</color>
+    <color name="colorPrimaryDark">#0F0F0F</color>
+    <color name="colorAccent">#DCDCDC</color>
+</resources>
