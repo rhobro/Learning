@@ -1,0 +1,12 @@
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.csprojAssemblyReference.cache
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.csproj.CoreCompileInputs.cache
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.AssemblyInfoInputs.cache
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.AssemblyInfo.cs
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/bin/Debug/netcoreapp3.1/Playground.deps.json
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/bin/Debug/netcoreapp3.1/Playground.runtimeconfig.json
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/bin/Debug/netcoreapp3.1/Playground.runtimeconfig.dev.json
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/bin/Debug/netcoreapp3.1/Playground.dll
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/bin/Debug/netcoreapp3.1/Playground.pdb
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.dll
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.pdb
+/Users/robro/Desktop/Rohan Mathew/Programming/ZLearning/C#/Codecademy/Playground/Playground/obj/Debug/netcoreapp3.1/Playground.genruntimeconfig.cache
