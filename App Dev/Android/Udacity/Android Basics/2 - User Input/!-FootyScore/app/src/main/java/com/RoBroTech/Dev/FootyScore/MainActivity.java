@@ -10,6 +10,7 @@
 
 package com.RoBroTech.Dev.FootyScore;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Setting Team A score to 0
         this.displayForTeamA(scoreTeamA);
+        // Setting Team B score to 0
+        this.displayForTeamA(scoreTeamB);
     }
 
     // Methods to update Team A points

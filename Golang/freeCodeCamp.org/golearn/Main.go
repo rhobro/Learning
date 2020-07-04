@@ -1,1 +1,4 @@
-package golearn
+package main
+
+func main() {
+}
