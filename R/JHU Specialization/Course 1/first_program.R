@@ -1,0 +1,2 @@
+mat <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8), nrow = 4, ncol = 2)
+df <- read.csv2("/Volumes/GoogleDrive/My Drive/Workspaces/Programming/Datasets/Kaggle Jane Street Market Prediction/jane-street-market-prediction/train.csv")
