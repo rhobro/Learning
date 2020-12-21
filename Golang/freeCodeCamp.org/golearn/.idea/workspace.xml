@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed698614-462d-43d2-a389-cbe2ccecb3b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/avant.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boseDim.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.idea/!-TicTacToe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Git/Udacity/FirstGitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Git/Udacity/FirstGitProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Git/Udacity/blog-project" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Git/Udacity/blog-project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/golearn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/golearn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Udacity/1 Intro to Functional Programming/!-TicTacToe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Modelling/Maya/My Stuff/rocket.mb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Modelling/Maya/My Stuff/rocket.mb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +54,14 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -58,19 +79,35 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tempconv" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build avant.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golearn" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/" />
+      <package value="golearn" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build avant.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="golearn" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/avant.go" />
       <package value="golearn" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -95,12 +132,18 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build avant.go" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build avant.go" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ed698614-462d-43d2-a389-cbe2ccecb3b7" name="Default Changelist" comment="" />
@@ -109,10 +152,21 @@
       <option name="presentableId" value="Default" />
       <updated>1593871728168</updated>
     </task>
+    <task id="LOCAL-00001" summary="Idk. Golang">
+      <created>1594673560117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594673560117</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -127,40 +181,75 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Idk. Golang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Idk. Golang" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1594672916533">
+    <state x="0" y="59" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601742236701">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1594672916533" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1594672916531">
+    <state x="0" y="59" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1601742236701" />
+    <state x="378" y="206" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595580672002">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1594672916531" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1594672916530">
+    <state x="378" y="206" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1595580672002" />
+    <state x="174" y="0" key="CommitChangelistDialog2" timestamp="1594673559658">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1594672916530" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1594672916532">
+    <state x="174" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1594673559658" />
+    <state width="726" height="212" key="GridCell.Tab.0.bottom" timestamp="1601743349057">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1594672916532" />
-    <state width="1238" height="264" key="GridCell.Tab.1.bottom" timestamp="1594111383066">
+    <state width="726" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1601743349057" />
+    <state width="639" height="212" key="GridCell.Tab.0.bottom/0.25.1280.775@0.25.1280.775" timestamp="1601484298743" />
+    <state width="726" height="212" key="GridCell.Tab.0.center" timestamp="1601743349054">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="264" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1594111383066" />
-    <state width="1238" height="264" key="GridCell.Tab.1.center" timestamp="1594111383064">
+    <state width="726" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1601743349054" />
+    <state width="639" height="212" key="GridCell.Tab.0.center/0.25.1280.775@0.25.1280.775" timestamp="1601484298741" />
+    <state width="726" height="212" key="GridCell.Tab.0.left" timestamp="1601743349053">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="264" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1594111383064" />
-    <state width="1238" height="264" key="GridCell.Tab.1.left" timestamp="1594111383063">
+    <state width="726" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1601743349053" />
+    <state width="639" height="212" key="GridCell.Tab.0.left/0.25.1280.775@0.25.1280.775" timestamp="1601484298740" />
+    <state width="726" height="212" key="GridCell.Tab.0.right" timestamp="1601743349055">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="264" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1594111383063" />
-    <state width="1238" height="264" key="GridCell.Tab.1.right" timestamp="1594111383065">
+    <state width="726" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1601743349055" />
+    <state width="639" height="212" key="GridCell.Tab.0.right/0.25.1280.775@0.25.1280.775" timestamp="1601484298742" />
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom" timestamp="1601570019616">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="264" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1594111383065" />
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1601570019616" />
+    <state width="1238" height="264" key="GridCell.Tab.1.center" timestamp="1601570019614">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1601570019614" />
+    <state width="1238" height="264" key="GridCell.Tab.1.left" timestamp="1601570019613">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1601570019613" />
+    <state width="1238" height="264" key="GridCell.Tab.1.right" timestamp="1601570019615">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1601570019615" />
+    <state x="0" y="25" key="SettingsEditor" timestamp="1600976354634">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="0" y="25" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1600976354634" />
+    <state x="0" y="36" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1600944288404" />
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1594673562837">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1594673562837" />
+    <state width="384" height="400" key="XDebugger.FullValuePopup" timestamp="1601322919579">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="384" height="400" key="XDebugger.FullValuePopup/0.0.1280.800@0.0.1280.800" timestamp="1601322919579" />
   </component>
 </project>
