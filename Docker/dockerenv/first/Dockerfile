@@ -2,4 +2,4 @@ FROM ubuntu
 
 RUN apt-get update
 
-ENTRYPOINT bash
+CMD bash
