@@ -1,20 +1,27 @@
-use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::io;
 
 fn main() {
-    println!("Guess the number!");
-    let secret = rand::thread_rng().gen_range(1, 20);
+    let min = 1;
+    let max = 20;
+    let n_guesses = 6;
 
-    for _ in 0..5 {
+    println!("Guess the number, between {} and {}!", min, max);
+    let secret = rand::thread_rng().gen_range(min, max);
+
+    for g in 1..1 + n_guesses {
         let mut guess = String::new();
-        println!("Guess: ");
+        println!("Guess {}: ", g);
         io::stdin()
             .read_line(&mut guess)
             .expect("failed to process guess");
-        let guess: u16 = match guess.trim().parse().expect("Invalid input") {
+        let guess: u16 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue,
+            Err(_) => {
+                println!("Invalid input");
+                continue;
+            }
         };
 
         match guess.cmp(&secret) {
@@ -22,10 +29,8 @@ fn main() {
             Ordering::Greater => println!("Too big"),
             Ordering::Equal => {
                 println!("Got it!");
-                return
+                return;
             }
         }
     }
-
-
 }

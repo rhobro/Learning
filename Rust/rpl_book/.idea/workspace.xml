@@ -7,21 +7,210 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/guess/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/variables/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/control_flow/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e26ada1a-a725-48f0-89f0-6c3d7935e0f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C++/c++pl/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/c++pl/.idea/c++pl.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C++/c++pl/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rpl_book.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/.fingerprint/control_flow-e76e088f827fc3fc/bin-control_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/.fingerprint/control_flow-e76e088f827fc3fc/bin-control_flow.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/.fingerprint/control_flow-e76e088f827fc3fc/dep-bin-control_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/.fingerprint/control_flow-e76e088f827fc3fc/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/control_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/control_flow.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/control_flow.dSYM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/deps/control_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/deps/control_flow.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/deps/control_flow.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/deps/control_flow.dSYM/Contents/Resources/DWARF/control_flow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/12q03wz0miv4me7b.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/1x2imop808soqzt9.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/2dou1buj0ueqzm6k.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/2kd05lzber7ev1v3.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/3azvs9uiwh669fg6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/3gp38sxzzvl0t7f3.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/3kaxj4kexcyjf0kr.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/4i7a89sv8fb2foz5.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/4rd22s6uamztclnr.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/4s1rmt3adqk9yl4q.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/6q38sxhuhfcgl2r.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/dep-graph.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/dvchk9i4qxn6l6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/lv7czcwpqzlnp2r.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/ngj7sokvsvn6dwv.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/query-cache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij-3koek0tlkcesv/work-products.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control_flow/target/debug/incremental/control_flow-17vczf9rvelmj/s-fwpyagred0-1d26cij.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/.fingerprint/variables-812af0313fa5dc67/bin-variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/.fingerprint/variables-812af0313fa5dc67/bin-variables.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/.fingerprint/variables-812af0313fa5dc67/dep-bin-variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/.fingerprint/variables-812af0313fa5dc67/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/deps/variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/deps/variables.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/deps/variables.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/deps/variables.dSYM/Contents/Resources/DWARF/variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/17u9n5y8hgm50746.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/1fr2m5k9phraznk9.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/1hq4kfye8an9owpu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/1mad7vyd0m8lhsvr.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/1s5ec18s3hck8b0t.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/1xejp8eeczbvc7qb.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/20685alg3tflwshz.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/24gpkzpmwb1ish2g.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2axhpd3qam4ebd2k.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2f3p00xwxdfivcu6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2p2spm76sec35gxn.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2qlcz7pl6k1lpcqf.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2rrf6avwr92z7le8.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/2tkwj9rx6thfoib5.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/34v3lxwtrcnlq9l.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/394dida6xcgxpkif.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3ipo6otnhkpk5cyv.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3jbsd06mw9n0zfwv.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3kag4pp5jx9qpqii.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3pj1d4zmh07om6of.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3y0f7bxm2x7l2vav.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/3ytgyzqpk3f8l15n.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/408cj09pdkqdhxo8.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/428bw61momdq2ugq.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/48bazt96ibzmj7ej.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/48ybt06xqevmd9r7.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/49k1coneils9xrw3.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/4nnis0uulql1op9p.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/4y8x7bxamk1rxc6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/50lg2vvxx1g4wb0r.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/51ltnuvpjt3yat4n.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/5a4rd3fgrahho64c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/5am8zzrdtmf3wy4v.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/dep-graph.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/dg4sf4gwhwyct9q.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/e0ukrgbq3dtnbsi.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/j7bsv3v5rar56u8.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/ke5b0fec7humo92.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/query-cache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/work-products.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0-2lqk43xtfhpki/ztqa6xvvqr2kx6u.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/incremental/variables-174n0r8ltigqy/s-fwpb2iz788-iudez0.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/variables.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/debug/variables.dSYM" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/.fingerprint/variables-812af0313fa5dc67/bin-variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/.fingerprint/variables-812af0313fa5dc67/bin-variables.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/.fingerprint/variables-812af0313fa5dc67/dep-bin-variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/.fingerprint/variables-812af0313fa5dc67/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/deps/variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/deps/variables.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variables/target/release/variables.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/c++pl/first.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/c++pl/first.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git/Udacity/FirstGitProject" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git/Udacity/FirstGitProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git/Udacity/blog-project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git/Udacity/blog-project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Kotlin/first-kt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/first-kt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Kotlin/first-kt/out/production/first-kt/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/first-kt/out/production/first-kt/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Kotlin/first-kt/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/first-kt/src/main/kotlin/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rpl_book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rpl_book.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/guess/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/deps/guess" beforeDir="false" afterPath="$PROJECT_DIR$/guess/target/debug/deps/guess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/deps/guess.dSYM/Contents/Resources/DWARF/guess" beforeDir="false" afterPath="$PROJECT_DIR$/guess/target/debug/deps/guess.dSYM/Contents/Resources/DWARF/guess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/guess" beforeDir="false" afterPath="$PROJECT_DIR$/guess/target/debug/guess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/107rwu7iigph5dpc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/15au101k2nd4l9kx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/15o9bv5a9rcil7j5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/15qrn137msykwuq8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/1j275u5gupd9r1im.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/1kvn12m1n3ifr4da.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/1lwzl0bs8bt9ais4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/1vwn5203nevn4ti9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/1wjkowzr9qhltoks.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/20w89bf3rccqgegf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/22s4r0f2zxqaatyo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/2ly6zozah04nasf8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/2mi1jwmbb7od40nt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/3jbnp1on8pdu2x9f.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/3jqg8mrmuwnl3lr5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/3pnlwcv4g85hvwv8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/3q46yz0pvqq6h99n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/3t1mxjqesqldpat3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/42nmzgs1kh8irdbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/42qw2isf0inreaj7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/475xu31uoqw0bh36.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/4980mtwdtydxt1m.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/4fykl30ucrth98zx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/4gqcrbb4n6q64q93.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/4jjpzkifrla75iex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/4qy9qsrtzopcxm7m.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/59t8vme6b0cnozlm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/5ba6ru1wtlfj8c08.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/5degqtq283z6sqqo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/fk1ulfxtkamqwm4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/i2wszq9wx95qfly.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/jatvbz2lx62lk9j.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/mifx5n94j6fmv3l.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/mrhhmp7mm17zo11.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/pdprdg7pk2vbmre.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/tz3nar2er4nb4rs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/weibdivi3sw40dq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds-working/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm765jqy6-zfrnds.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/107rwu7iigph5dpc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/15au101k2nd4l9kx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/15o9bv5a9rcil7j5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/15qrn137msykwuq8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/1j275u5gupd9r1im.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/1kvn12m1n3ifr4da.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/1lwzl0bs8bt9ais4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/1vwn5203nevn4ti9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/1wjkowzr9qhltoks.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/20w89bf3rccqgegf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/22s4r0f2zxqaatyo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/2ly6zozah04nasf8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/2mi1jwmbb7od40nt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/3jbnp1on8pdu2x9f.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/3jqg8mrmuwnl3lr5.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/3pnlwcv4g85hvwv8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/3q46yz0pvqq6h99n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/3t1mxjqesqldpat3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/42nmzgs1kh8irdbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/42qw2isf0inreaj7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/475xu31uoqw0bh36.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/4980mtwdtydxt1m.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/4fykl30ucrth98zx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/4gqcrbb4n6q64q93.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/4jjpzkifrla75iex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/4qy9qsrtzopcxm7m.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/59t8vme6b0cnozlm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/5ba6ru1wtlfj8c08.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/5degqtq283z6sqqo.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/fk1ulfxtkamqwm4.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/i2wszq9wx95qfly.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/jatvbz2lx62lk9j.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/mifx5n94j6fmv3l.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/mrhhmp7mm17zo11.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/pdprdg7pk2vbmre.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/tz3nar2er4nb4rs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/weibdivi3sw40dq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n-30sq2n4kvhgc9/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/debug/incremental/guess-3ajbmn521ld1j/s-fwm769mllz-2j8o6n.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/release/deps/guess" beforeDir="false" afterPath="$PROJECT_DIR$/guess/target/release/deps/guess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guess/target/release/guess" beforeDir="false" afterPath="$PROJECT_DIR$/guess/target/release/guess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +246,25 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Run control_flow">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run control_flow" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package control_flow --bin control_flow" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/control_flow" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <configuration name="Run guess" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -78,8 +282,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run variables" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package variables --bin variables" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/variables" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run control_flow" />
+        <item itemvalue="Cargo.Run variables" />
         <item itemvalue="Cargo.Run guess" />
       </list>
     </recent_temporary>
@@ -97,7 +318,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615241251053</updated>
       <workItem from="1615241255480" duration="635000" />
-      <workItem from="1615308619096" duration="7371000" />
+      <workItem from="1615308619096" duration="15084000" />
     </task>
     <servers />
   </component>
@@ -118,16 +339,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/guess/src/main.rs</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
