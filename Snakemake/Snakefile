@@ -1,0 +1,343 @@
+"""
+Author: E. McDonnell
+Affiliation: University of Leedss
+Aim: RNA-Seq Pipeline that can handle both Single-End and Paired-End .fastq.gz files and quantifies via HISAT2/HTSeq and Salmon
+Run: snakemake --profile sge --cluster-config cluster.yaml -s Snakefile --rerun-incomplete --cores 80 --report rna-seq_hisat2_salmon.html
+"""
+
+# Import packages and Snakemake versions --------------------------------------|
+
+# Import minimum version
+from snakemake.utils import min_version
+min_version("5.25")
+
+# Python Packages
+import pandas as pd
+
+
+
+# Report ----------------------------------------------------------------------|
+
+report: "report/rna-seq_hisat2_salmon.rst"
+# Generate HTML with --report rna-seq_hisat2_salmon.html
+
+# Globals ----------------------------------------------------------------------
+
+# Setting genome fastas/gtfs
+VIRUS_NAME = "NC_009333.1"
+GENOME_NAME = "GRCh38.p13." + VIRUS_NAME + ".fa"
+TSOME_NAME = VIRUS_NAME + ".gencode.v37.tsome.fa"
+GTF_NAME = VIRUS_NAME + "_UCDS_simple_030220.gencode.v37.gtf"
+INDEX_NAME = GENOME_NAME.replace(".fa","")
+TSOME_INDEX_NAME = TSOME_NAME.replace(".fa","")
+
+
+# Setting global path names and directories
+PROJ_DIR  = '/nobackup/bs14e3m/other_projects/t_rose/latent_meta_analysis/'
+# print(">>>>> Project base directory is " + PROJ_DIR)
+
+FASTQ_DIR = PROJ_DIR + "raw_fastq/"
+REF_DIR   = PROJ_DIR + "refs/"
+ANNOT_DIR = PROJ_DIR + "annotations/"
+
+
+# Set paths
+GENOME = REF_DIR + GENOME_NAME
+GTF    = ANNOT_DIR + GTF_NAME
+INDEX  = PROJ_DIR + "indices/hisat2/" + INDEX_NAME
+
+# print(">>>>> Genome file being used is " + GENOME)
+# print(">>>>> Index being used is " + INDEX)
+# print(">>>>> GTF file being used is " + GTF)
+
+
+
+# Metadata & Config -----------------------------------------------------------|
+
+# Read in configfile
+configfile: PROJ_DIR + "snakemake/yamls/" + "config.yaml"
+
+# Salmon kmers
+KMERS = config.pop("SALMON_KMER")
+
+# Extract just SE reads and get filename without the .fastq.gz but with the read type (ie R1 or R2)
+df = pd.DataFrame(config)
+WITH_READ_PAIRING_SAMPLES=[ sample.replace(".fastq.gz","") for sample in df['SAMPLE'].tolist()] # Need this to get a list that maintains the Read identification (ie R1/R2)
+
+
+
+# Parameters ------------------------------------------------------------------|
+
+# Global parameters
+THREADS = 4
+
+# Cutadapt parameters
+QUAL = 20
+MIN_LENGTH = 25
+
+# FASTQC Parameters
+FASTQC_FILES=["_fastqc.zip","_fastqc.html"]
+
+# Salmon parameters
+KMERS=[31] # config.pop("SALMON_KMER")
+SALMON_FILES=["quant.sf","lib_format_counts.json"]
+
+# HTSeq Parameters
+FEATURES=["gene","tx"] # HTSeq levels to perform quantification on
+
+
+
+# Functions -------------------------------------------------------------------|
+
+# Sort out input for Hisat2, defining and matching single vs paired-end reads
+def get_fastqs(wildcards):
+    # Generate output dictionary
+    output = dict()
+
+    # Get dictionary output of above, basically the sample IDs with the right read id added (R1/R2) at the end`
+    pairing = dict(zip(WITH_READ_PAIRING_SAMPLES, df["PAIRED"]))
+
+    # If the  pairing ID is actually in the keys else you get a KeyError
+    if wildcards.sample + "_R1" in list(pairing.keys()) and wildcards.sample + "_R2" in list(pairing.keys()):
+
+        # If the pairing Key corresponds to a paired read and assign to output dictionary accordingly
+        if pairing[wildcards.sample + "_R1"] == "Paired" and pairing[wildcards.sample + "_R2"] == "Paired":
+            output["input1"] = PROJ_DIR + "qced_fastq/" + wildcards.sample + "_R1.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+            output["input2"] = PROJ_DIR + "qced_fastq/" + wildcards.sample + "_R2.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+
+    # If the  pairing ID is actually in the keys else you get a KeyError
+    else:
+            # Opposite of above
+            if pairing[wildcards.sample] == "Single":
+                output["input"] = PROJ_DIR + "qced_fastq/" + wildcards.sample + ".cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+
+    # Extract filenames (values) from the dictionary and convert to list as we can't use unpack to get these and name them input.reads
+    output = list(output.values())
+    return output
+
+
+
+# Target Rules ----------------------------------------------------------------|
+
+# Master rule
+rule all:
+    input:
+        expand(PROJ_DIR + "qced_fastq/fastqc/{sample_w_reads}.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + "{fqc_files}", sample_w_reads=WITH_READ_PAIRING_SAMPLES, fqc_files=FASTQC_FILES), \
+        expand(PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}" + "/{sample}/" + "{salmon_suffix}", kmer=KMERS, sample=df["SAMPLE_ID"], salmon_suffix=SALMON_FILES), \
+        expand(PROJ_DIR + "htseq/" + INDEX_NAME + "/" + GTF_NAME.replace(".gtf","") + "/{sample}.hisat2_htseq_{feature}_level.csv", sample=df["SAMPLE_ID"], feature=FEATURES,)
+
+
+
+# Rule Orders -----------------------------------------------------------------|
+
+# So paired end reads aren't sent through the single end pipeline first.
+# The method for getting HISAT2 rule to recognise single and paired end reads was based on this post: https://stackoverflow.com/questions/63323670/snakemake-rna-seq-how-can-i-execute-one-subpart-of-a-pipeline-or-another-subp.
+# But I had to make modifications cus their code didn't quite work in my context.
+ruleorder: cutadapt_pe > cutadapt_se
+ruleorder: salmon_pe > salmon_se
+
+
+# Read Processing and Quality Control (Cutadapt/FASTQC) -----------------------|
+
+# Trim read with SINGLE END cutadapt
+rule cutadapt_se:
+  input:
+    PROJ_DIR + "raw_fastq/{sample}.fastq.gz"
+  output:
+    PROJ_DIR + "qced_fastq/{sample}.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+  conda: "yamls/tim_rose.yaml"
+  threads: THREADS
+  params:
+    qual=QUAL,
+    minl=MIN_LENGTH,
+    adpt=" -a AAAAAAAAAAAAAAAAAAAAAAAAAAA -a AGATCGGAAGAG "
+  log: PROJ_DIR + "qced_fastq/{sample}.cutadapt_run.log"
+  message: """>>>>> Trimming reads with Cutadapt SINGLE END on :- {wildcards.sample}"""
+  shell:
+    "cutadapt -q {params.qual} -m {params.minl}" + \
+             " --trim-n {params.adpt} {input}" + \
+             " -o {output} &> {log} "
+
+# Trim read with PAIRED END cutadapt
+rule cutadapt_pe:
+  input:
+    in_R1=PROJ_DIR + "raw_fastq/{sample}_R1.fastq.gz",
+    in_R2=PROJ_DIR + "raw_fastq/{sample}_R2.fastq.gz"
+  output:
+    out_R1=PROJ_DIR + "qced_fastq/{sample}_R1.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz",
+    out_R2=PROJ_DIR + "qced_fastq/{sample}_R2.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+  conda: "yamls/tim_rose.yaml"
+  threads: THREADS
+  params:
+    qual=QUAL,
+    minl=MIN_LENGTH,
+    adpt=" -a AAAAAAAAAAAAAAAAAAAAAAAAAAA -a AGATCGGAAGAG -A AAAAAAAAAAAAAAAAAAAAAAAAAAA -A AGATCGGAAGAG "
+  log: PROJ_DIR + "qced_fastq/{sample}.cutadapt_run.log"
+  message: """>>>>> Trimming reads with Cutadapt PAIRED END on :- {wildcards.sample}"""
+  shell:
+    "cutadapt -q {params.qual} -m {params.minl} " + \
+             " --trim-n {params.adpt} {input.in_R1} {input.in_R2} " + \
+             " -o {output.out_R1} -p {output.out_R2} &> {log} "
+
+# Quality control reads with FastQC
+rule fastqc:
+  input:
+    PROJ_DIR + "qced_fastq/{sample_w_reads}.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz"
+  output:
+    PROJ_DIR + "qced_fastq/fastqc/{sample_w_reads}.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + "{fqc_files}",
+  conda: "yamls/tim_rose.yaml"
+  message: """>>>>> Quality check of raw data with Fastqc on :- {wildcards.sample_w_reads}"""
+  shell:
+        " fastqc {input} -o " + PROJ_DIR + "qced_fastq/fastqc/ " + \
+                 "&>" + PROJ_DIR + "qced_fastq/fastqc/{wildcards.sample_w_reads}_fastqc_log"
+
+
+
+# Alignment / Mapping (Hisat2 / Salmon) ---------------------------------------|
+
+# Align with HISAT2
+rule hisat2_align:
+    input:
+      reads=get_fastqs # Can't use unpack here as it wont let me save the output to input.reads wildcards. So I take the values out before return in get_fastqs so the output is a list of filenames (PE or SE)
+    output:
+      protected(PROJ_DIR + "hisat2/" + INDEX_NAME + "/{sample}.hisat2.bam") # Create protected output BAM that can't be easily deleted or overwritten. Can do the opposite and create temporary files ie temp()
+    log:
+      PROJ_DIR + "hisat2/" + INDEX_NAME + "/{sample}.hisat2_run.log"
+    params:
+      idx=INDEX + "/" + INDEX_NAME,
+      extra=" -k 1 --max-intronlen 10000 "
+    threads: THREADS
+    conda: "yamls/tim_rose.yaml"
+    message: """
+             >>>>> Aligning reads with HISAT2 on :- {wildcards.sample}
+                >> Ouputting to :- {output}
+                >> Log to :- {log}
+             """
+    wrapper:
+             "0.73.0/bio/hisat2/align"
+
+# Single-End Salmon
+rule salmon_se:
+            input:
+                r=PROJ_DIR + "qced_fastq/{sample}.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz",
+                idx=PROJ_DIR + "indices/salmon/" + TSOME_INDEX_NAME + "/k{kmer}"
+            output:
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/quant.sf",
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/lib_format_counts.json"
+            log:
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/salmon_run.log"
+            params: kmer=KMERS
+            threads: THREADS
+            conda: "yamls/tim_rose.yaml"
+            message: """
+                     >>>>> Quantifying libraries (Single-End) with SALMON :- {wildcards.sample}
+                        >> Ouputting to :- {output}
+                        >> Log to :- {log}
+                     """
+            shell:
+                     " mean=$( bioawk -c fastx '{{ sum+=length($seq) }} END {{ print sum / NR }}' {input.r} ) && " + \
+                     " sd=$(   bioawk -c fastx '{{ diff=(length($seq)-mean); sum+=diff*diff }} END {{ print sqrt(sum/NR) }}' mean=$mean {input.r} ) && " + \
+                     " echo '>>>>> Mean = $mean / SD = $sd' && " + \
+                     " salmon quant " + \
+                                 " -p {threads} " + \
+                                 " --fldMean $mean --fldSD $sd " + \
+                                 " --validateMappings --gcBias --seqBias -l A " + \
+                                 " -r {input.r} " + \
+                                 " -i {input.idx} " + \
+                                 " -o " + PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{params.kmer}/{wildcards.sample}"
+
+# Paired-end Salmon
+rule salmon_pe:
+            input:
+                r1=PROJ_DIR + "qced_fastq/{sample}_R1.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz",
+                r2=PROJ_DIR + "qced_fastq/{sample}_R2.cdpt_q" + str(QUAL) + "_m" + str(MIN_LENGTH) + ".fastq.gz",
+                idx=PROJ_DIR + "indices/salmon/" + TSOME_INDEX_NAME + "/k{kmer}"
+            output:
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/quant.sf",
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/lib_format_counts.json"
+            log:
+                PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{kmer}/{sample}/salmon_run.log"
+            params: kmer=KMERS
+            threads: THREADS
+            conda: "yamls/tim_rose.yaml"
+            message: """
+                     >>>>> Quantifying libraries (Paired-End) with SALMON :- {wildcards.sample}
+                        >> Ouputting to :- {output}
+                        >> Log to :- {log}
+                     """
+            shell:
+                     " salmon quant " + \
+                                " -p {threads} " + \
+                                " --validateMappings --gcBias --seqBias -l A " + \
+                                " -1 {input.r1} -2 {input.r2} " + \
+                                " -i {input.idx} " + \
+                                " -o " + PROJ_DIR + "salmon/" + TSOME_INDEX_NAME + "/k{params.kmer}/{wildcards.sample}"
+
+
+# Read in the mapping stats files
+# files = list(set(expand(SALMON_DIR + "{sample}/" + "mapping_stats.log" sample=SAMPLES)))
+# concat = '\n'.join([open(f).read() for f in files]) # Concat them together
+# Write to file
+# f = open(SALMON_DIR + str(SALMON_KMER) + "_mapping_stats.txt", "a")
+# f.write(concat)
+# f.close()
+
+
+
+# Read Quantification (HTSeq) -------------------------------------------------|
+
+# Quantify reads using HTSeq to gene-level
+rule htseq_gene_level:
+  input:
+    bam=PROJ_DIR + "hisat2/" + INDEX_NAME + "/{sample}.hisat2.bam",
+    gtf=GTF
+  output:
+    PROJ_DIR + "htseq/" + INDEX_NAME + "/" + GTF_NAME.replace(".gtf","") + "/{sample}.hisat2_htseq_gene_level.csv"
+  threads: THREADS
+  conda: "yamls/tim_rose.yaml"
+  log: PROJ_DIR + "htseq/" + INDEX_NAME + "/" + GTF_NAME.replace(".gtf","") + "/{sample}.hisat2_htseq_gene_run.log"
+  params:
+    count_mode = 'intersection-nonempty',
+    main_id = 'gene_id',
+    feature = 'gene',
+    additional = ' --additional-attr="gene_name"'
+  message: """
+           >>>>> Quantifying reads with HTSeq (gene level) on :- {wildcards.sample}
+              >> Ouputting to :- {output}
+              >> Log to :- {log}
+           """
+  shell:
+         " htseq-count -m {params.count_mode} "  + \
+                     " -s yes -t {params.feature} " + \
+                     " -i {params.main_id} " + \
+                     " {params.additional} " + \
+                     " -f bam " + \
+                     " {input.bam} {input.gtf} > {output} "
+
+# Quantify reads using HTSeq to transcript-level
+rule htseq_transcript_level:
+  input:
+    bam=PROJ_DIR + "hisat2/" + INDEX_NAME + "/{sample}.hisat2.bam",
+    gtf=GTF
+  output:
+    PROJ_DIR + "htseq/" + INDEX_NAME + "/" + GTF_NAME.replace(".gtf","") + "/{sample}.hisat2_htseq_tx_level.csv"
+  threads: THREADS
+  conda: "yamls/tim_rose.yaml"
+  log: PROJ_DIR + "htseq/" + INDEX_NAME + "/" + GTF_NAME.replace(".gtf","") + "/{sample}.hisat2_htseq_tx_run.log"
+  params:
+    count_mode = 'intersection-nonempty',
+    main_id = 'transcript_id',
+    feature = 'transcript',
+    additional = ' --additional-attr="transcript_name"'
+  message: """
+           >>>>> Quantifying reads with HTSeq (transcript level) on :- {wildcards.sample}
+              >> Ouputting to :- {output}
+              >> Log to :- {log}
+           """
+  shell:
+         " htseq-count -m {params.count_mode} "  + \
+                     " -s yes -t {params.feature} " + \
+                     " -i {params.main_id} " + \
+                     " {params.additional} " + \
+                     " -f bam " + \
+                     " {input.bam} {input.gtf} > {output} "
