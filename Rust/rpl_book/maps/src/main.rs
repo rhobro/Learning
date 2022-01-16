@@ -17,5 +17,4 @@ fn main() {
 
     scores.entry(String::from("Blue")).or_insert(20);
     scores.entry(String::from("Green")).or_insert(100);
-    println!("{}", scores.get())
 }
